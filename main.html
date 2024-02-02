@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jarmon Shop</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<style>
+  body {
+    background: linear-gradient(to right, #d269e7 0%, #a7dbb4 50%, #f17e25 100%);
+  }
+</style>
+</head>
+<body>
+<div class="flex flex-col items-center justify-center h-screen">
+  <div id="title" class="text-white font-bold text-4xl mb-4"></div>
+  <!-- สร้าง div ใหม่สำหรับ "ช่องทางการติดต่อ" -->
+  <div id="contact-info" class="text-white text-xl mt-2"></div>
+  <div class="flex space-x-4 items-center mb-4">
+    <a href="https://discord.gg/4wAzWdaEUT" target="_blank" class="text-white text-2xl">
+      <i class="fab fa-discord"></i> DISCORD
+    </a>
+    <a href="https://www.facebook.com/thanapat.inti" target="_blank" class="text-white text-2xl">
+      <i class="fab fa-facebook"></i> FACEBOOK
+    </a>
+  </div>
+  <div class="text-white text-sm">
+    FB: จารม่อน เอฟเอฟ
+  </div>
+  <img src="https://cdn.discordapp.com/attachments/915090333199650916/1203007107109097592/image0.jpg?ex=65cf86ad&is=65bd11ad&hm=1b7d63fe0fff277a764f2a4d25164be88936e2c208036fa02571ad840e827870&" alt="Profile image of a person with pink background wearing a pink shirt" class="rounded-full mt-4">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    var options = {
+        strings: ['JARMON SHOP', 'ช่องทางการติดต่อ'],
+        typeSpeed: 100,
+        backSpeed: 15,
+        startDelay: 600,
+        loop: true,
+        onComplete: function(self) {
+            self.cursor.remove(); // ลบเคอเซอร์เมื่อพิมพ์เสร็จ
+        },
+    };
+
+    new Typed('#title', options);
+
+    // ตัวอย่างการใช้งาน Typed.js สำหรับ "ช่องทางการติดต่อ" โดยแยกอินสแตนซ์
+    // แต่ในตัวอย่างนี้เราใช้อาร์เรย์ strings เพื่อจัดการทั้งหมดในอินสแตนซ์เดียว
+});
+</script>
+</body>
+</html>
